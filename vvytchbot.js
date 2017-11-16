@@ -11,10 +11,10 @@ const config = {
 const Twitter = new twit(config);
 
 
-var emoji_list = ['new_moon', 'waxing_crescent_moon', 'first_quarter_moon', 'waxing_gibbous_moon', 'full_moon', 'waning_gibbous_moon', 'third_quarter_moon', 'old_key', 'coffin', 'spider', 'bee', 'rose', 'hearts', 'diamonds', 'spades', 'clubs', 'rainbow', 'cherry_blossom', 'mushroom', 'apple', 'tea', 'ear_of_rice', 'scales', 'knife', 'wine_glass', 'spider_web', 'japanese_ogre', 'skull'];
+	var emoji_list = ['new_moon', 'waxing_crescent_moon', 'full_moon', 'new_moon', 'waxing_crescent_moon', 'waning_crescent_moon', 'old_key', 'spider', 'full_moon', 'first_quarter_moon', 'last_quarter_moon', 'first_quarter_moon', 'waxing_gibbous_moon', 'full_moon', 'waning_gibbous_moon', 'last_quarter_moon', 'old_key', 'coffin', 'spider', 'bee', 'rose', 'hearts', 'diamonds', 'spades', 'clubs', 'crystal_ball', 'amphora', 'cherry_blossom', 'mushroom', 'apple', 'tea', 'ear_of_rice', 'scales', 'knife', 'wine_glass', 'spider_web', 'japanese_ogre', 'skull'];
 
 function composeTweet(){
-	var tweetLength = Math.floor(Math.random() * 20) + 1;
+	var tweetLength = Math.floor(Math.random() * 40) + 1;
 	var tweetText = '';
 	console.log(tweetLength);
 	for(var i=0; i < tweetLength; i++) {
@@ -38,4 +38,4 @@ let tweet = function() {
 };
 
 tweet();
-setInterval(tweet, 6000000);
+setInterval(tweet, 3600000);
